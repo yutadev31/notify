@@ -6,6 +6,8 @@ A lightweight, cross-platform desktop notification utility written in Rust.
 
 Supports custom application names, icons, timeouts, and urgency levels.
 
+On macOS, only the title and body are supported. The `--app-name` (`-a`), `--icon` (`-i`), `--expire-time` (`-e`), and `--urgency` (`-u`) options are unavailable.
+
 ## Installation
 
 ### Cargo
@@ -68,7 +70,7 @@ Available urgency levels are `low`, `normal`, and `critical`. The default is `no
 
 It supports Linux and other Unix-like systems with a desktop notification service over D-Bus, as well as macOS and Windows.
 
-Support for notification options varies by platform and notification server. Icons, timeouts, and urgency levels may be ignored.
+On other platforms, support for notification options varies by platform and notification server. Icons, timeouts, and urgency levels may be ignored.
 
 ## Development
 
